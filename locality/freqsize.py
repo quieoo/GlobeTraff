@@ -10,7 +10,7 @@ import sys
 import os
 
 def usage():
-    print "Usage: %s <workload_file> <docs_file>" % sys.argv[0]
+    print ("Usage: %s <workload_file> <docs_file>" % sys.argv[0])
 
 def main():
     if len(sys.argv) != 3:
@@ -29,21 +29,21 @@ def main():
             iid = int(iid)
             if min_iid > iid: min_iid = iid
             if max_iid < iid: max_iid = iid
-            if items.has_key(iid):
+            if iid in items:
                 items[iid][0] = items[iid][0] + 1
             else:
                 items[iid] = [1, isize]
             buf = w.readline()
-   
-   
-    print min_iid
+
+
+    print (min_iid)
     with open(df, 'w') as d:
-        for i in xrange(min_iid, max_iid+1, 1):
-            if not items.has_key(i): continue
+        for i in range(min_iid, max_iid+1, 1):
+            if i not in items: continue
             buf = items[i]
             s= '%d\t%d\t%s\t1\n' % (i, buf[0], buf[1])
             d.write(s)
-            
+
 
 if __name__ == "__main__":
     sys.exit(main())
