@@ -47,7 +47,7 @@ chmod -R +x *
 ./setup
 cd JavaDUI
 java -jar dist/JavaGUI.jar
-```
+````
 
 After the GUI operation, the generated trace will be output in JavaGUI/data/
 Two kind of files will be generated:
