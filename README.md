@@ -41,5 +41,18 @@ lrustack, numWebDocs, numWebRequests,postprocess,sizeSamples.
 ##Usage
 
 ``
-cd trace
+cd trace/GlobeTraff
+chmod -R +x *
+./setup
+cd JavaDUI
+java -jar dist/JavaGUI.jar
 ``
+
+After the GUI operation, the generated trace will be output in JavaGUI/data/
+Two kind of files will be generated:
+    1. workload.*
+        Time | ItemID | Size(Bytes)
+    2. docs.*
+        ItemID | Popularity | Size(Bytes) | Application Type
+The Application Type: 1: Web, 2: P2P, 3: Video, 4: Other
+
