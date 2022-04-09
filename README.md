@@ -35,3 +35,11 @@ in the JavaGUI/src directory and it can be compiled and run with the
 properly prepare and mix the traffic workloads, the Java code uses the 
 following scripts located in the JavaGUI directory: cleanup, freq, 
 lrustack, numWebDocs, numWebRequests,postprocess,sizeSamples.
+
+
+
+##Usage
+
+``
+cd trace
+``
