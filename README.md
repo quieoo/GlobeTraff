@@ -38,7 +38,8 @@ lrustack, numWebDocs, numWebRequests,postprocess,sizeSamples.
 
 
 
-##Usage
+USAGE
+-------------
 
 ``
 cd trace/GlobeTraff
