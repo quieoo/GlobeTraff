@@ -1,1 +1,1 @@
-../lrustack /home/quieoo/desktop/IPFS-Benchmarking/traces/GlobeTraff/JavaGUI/ 0.2 100 178649 54273 3 stack.dat > data/workload.tmp
+../lrustack /home/quieoo/desktop/IPFS-Benchmarking/traces/GlobeTraff/JavaGUI/ 0.2 100 178684 54273 3 stack.dat > data/workload.tmp
